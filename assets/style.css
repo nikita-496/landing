@@ -216,6 +216,7 @@ button:hover
     flex-direction: column;
     justify-content: space-between;
     width: 220px;
+    gap: 30px;
 }
 .sectiion-third .card-row::after{
     content: "";
@@ -500,7 +501,7 @@ left: 15px;
 top: 15px
 }
 .form-btn{
-    width: 300.77px;
+    width: 300.77px !important;
     background-color: rgba(37, 202, 113, 1) !important;
     color: white;
     border-radius: 8px !important;
@@ -508,11 +509,13 @@ top: 15px
     font-family: 'SuisseIntlRegular', sans-serif;
     position: relative;
     z-index: 1000;
+    text-align: center;
 }
 .btn-title{
     color: white !important;
     line-height: 24px;
     width: 100%;
+    text-decoration: none;
 }
 .modal-content{
     border-radius: 20px !important;
@@ -919,7 +922,7 @@ top: 15px
         width: 207px;
     }
     .form-btn {
-        max-width: 250px;
+        max-width: 250px !important;
     } 
     .sectiion-last-1-card-col-image{
         top: 0px;
