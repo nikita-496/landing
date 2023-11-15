@@ -407,7 +407,7 @@ button:hover
 .sectiion-last-1-card-col-image__blur{
     position: absolute;
     z-index: 1;
-    left: 55px;
+    left: 50px;
     top: 120px;
 }
 .sectiion-last-1-card-col-image__blur_rigtht{
@@ -417,14 +417,13 @@ button:hover
 .sectiion-last-1-card-col-image__team{
     position: relative;
     z-index: 5;
-    top: 130px;
+    top: 100px;
 }
 .sectiion-last-1-card-col-image__man {
     left: 110px;
 }
 .sectiion-last-1-card-col-image__team{
-    left: 50px;
-    top: 165px;
+    left: 30px;
 }
 .sectiion-last-1-card-row .border-box-container{
     background: url('../img/grass.png') no-repeat;
