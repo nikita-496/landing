@@ -510,7 +510,7 @@ top: 15px
     z-index: 1000;
 }
 .btn-title{
-    color: white;
+    color: white !important;
     line-height: 24px;
     width: 100%;
 }
