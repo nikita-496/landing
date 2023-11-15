@@ -612,6 +612,7 @@ top: 15px
     }
     .hero-card__text{
         font-size: 21px;
+        line-height: 20px;
     }
     .sectiion_subtitle{
         font-size: 24px;
@@ -655,6 +656,7 @@ top: 15px
     .sectiion-hero__col-last .border-box-container .border-box{
         height: 264px;
         width: 100%;
+        gap: 108px;
     }
     .hero-card__text_second{
         width: 285px;
@@ -665,10 +667,7 @@ top: 15px
     }
     .sectiion-second .border-box-container .border-box{
         width: 500px;
-    }
-    .sectiion-second_col_info{
-        flex-direction: column;
-        overflow:initial;
+        gap: 108px;
     }
     .stage{
         left: 45px;
@@ -709,8 +708,8 @@ top: 15px
       }
       .image-absolute{
         position: relative;
-        right: -150px;
-        top: 100px;
+        right: 0px;
+        top: 0px;
     }
     .list-col__text_decore{
         position: relative;
@@ -718,6 +717,10 @@ top: 15px
     }
     .sectiion-last-1 .section_title{
         width: 400px;
+    }
+    .list-col{
+        padding-top: 24.5px !important;
+        padding-bottom: 24.5px !important;
     }
 }
 @media (min-width: 768px) {
@@ -915,7 +918,7 @@ top: 15px
     .image-absolute{
         position: absolute;
         right: 200px;
-        top: 100px;
+        top: 40px;
     }
     .list-col__text{
         font-size: 32px;
@@ -931,12 +934,12 @@ top: 15px
         border-radius: 50px;
         border: 1px solid #25CA71;
         position: absolute;
-        right: 40px;
-        top:20px;
+        right: 140px;
+        top:10px;
     } 
     .list-col__text, .list-col__text_third, .list-col__text_last {
         font-size: 24px;
-        width: 500px;
+        width: 600px;
         display: block;
     }
     
@@ -1014,6 +1017,10 @@ top: 15px
     }
     .sectiion-third .card-row{
         width: 798px
+    }
+    .sectiion-second_col_info{
+        flex-direction: column;
+        overflow:initial;
     }
 }
 
