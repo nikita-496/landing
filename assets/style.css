@@ -80,16 +80,16 @@ button:hover
     font-weight: 300;
 }
 .section_title{
-    font-size: 54px;
+    font-size: 24px;
 }
 .sectiion-second .section_title{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .sectiion-third_title{
-    font-size: 32px;
+    font-size: 18px;
 }
 .sectiion-third_text{
-    width: 580px;
+    width: 259px;
     font-family: 'SuisseIntlLight', sans-serif !important;
 }
 .sectiion_subtitle{
@@ -179,7 +179,7 @@ button:hover
     margin-top: 51px; 
 }
 .sectiion-second_row-last{
-    margin-top: 84px !important;
+    margin-top: 24px !important;
 }
 .sectiion-third{
     margin-top: 51px !important;
@@ -362,7 +362,7 @@ button:hover
     margin-bottom: 99px;
 }
 .sectiion-last-1 .section_title{
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
 }
@@ -439,11 +439,11 @@ button:hover
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    margin-top: 50px !important;
+    margin-top: 24px !important;
 }
 .sectiion-second_col_info .hero-card__text{
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: 14px;
 }
 .sectiion-second_col_info .hero-card__text_first{
     width: 391px;
@@ -554,7 +554,53 @@ top: 15px
 @media (min-width: 576px){
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         padding: 0px 10px !important;
-    }       
+    }      
+    .hero__title{
+        font-size: 54px;
+        line-height: 58px;
+    }
+    .sectiion-hero__text{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .hero-card__text{
+        font-size: 21px;
+    }
+    .sectiion_subtitle{
+        font-size: 24px;
+    }
+    .list-col__text{
+        font-size: 24px;
+        width: 350px;
+    } 
+    .section_title{
+        font-size: 34px;
+    }
+    .sectiion-second_col_info .hero-card__text{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .sectiion-third_title{
+        font-size: 24px;
+    }
+    .sectiion-last-1 .section_title{
+        width: 500px;
+    }
+    .sectiion-last-1-card-col-image__man {
+        left: 180px;
+        top: 100px;
+    }
+    .sectiion-last-1-card-col-image__blur{
+        left: 130px;
+        top: 120px;
+    }
+    .sectiion-last-1-card-col-image__team{
+        top: 100px;
+        left: 100px;
+    }
+    .sectiion-third_text{
+        width: 100%;
+    }
 }
 @media (min-width: 768px) {
     .hero__title{
@@ -589,6 +635,9 @@ top: 15px
         font-size: 25px;
         width: 150px;
     }
+    .section_title{
+        font-size: 54px;
+    }
     .sectiion-last-1 .section_title{
         width: 600px;
         margin: 0 auto;
@@ -613,6 +662,37 @@ top: 15px
     }
     .sectiion-last-1-col__titile{
         font-size: 25px;
+    }
+    .sectiion-second .section_title{
+        margin-bottom: 50px;
+    }
+    .sectiion-second_col_info{
+        margin-top: 50px !important;
+    }
+    .sectiion-second_row-last{
+        margin-top: 24px !important;
+    }
+    .sectiion-second_col_info .hero-card__text{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .sectiion-third_title{
+        font-size: 32px;
+    }
+    .sectiion-last-1-card-col-image__man {
+        left: 261px;
+        top: 90px;
+    }
+      .sectiion-last-1-card-col-image__blur{
+        left: 216px;
+        top: 120px;
+    }
+    .sectiion-last-1-card-col-image__team{
+        left: 180px;
+        top: 90px;
+    }
+    .sectiion-third_text{
+        width: 580px;
     }
 }
 
@@ -745,7 +825,6 @@ top: 15px
     .sectiion-last-row-last .text{
         font-size: 33.48px;
         padding-bottom: 24px;
-        line-height: 100%;
     }
     .sectiion-last .section_title {
         text-align: start;
