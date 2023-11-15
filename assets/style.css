@@ -506,6 +506,8 @@ top: 15px
     border-radius: 8px !important;
     padding: 17px 0px !important;
     font-family: 'SuisseIntlRegular', sans-serif;
+    position: relative;
+    z-index: 1000;
 }
 .btn-title{
     color: white;
