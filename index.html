@@ -48,13 +48,19 @@
                     Mostre seus talentos aos olheiros europeus em sua cidade
                 </h1>
               </div>
-            </div>
+            </div> <img class="hero-card__blur_first hero-card__blur" src="./img/card-bg-blur.svg">
             <div class="sectiion-hero__col-middle row">
-                <div class="col">
-                    <img src="./img/team.png">
+                <div class="sectiion-hero__col_image col">
+                    <img 
+                    srcset="./img/team-w-390.png 390w, ./img/team.png 593w"
+                    sizes="(max-width: 700px) 390px,
+                        593px"
+                    src="./img/team.png"
+                    alt=""
+                >
                     </img>
                 </div>
-                <div class="col d-flex flex-column justify-content-center p-0">
+                <div class="sectiion-hero__col_content col d-flex flex-column justify-content-center p-0">
                   <p class="sectiion-hero__text"> Participe do torneio Tempo de futebol realizado em todo o estado do 
                       Ceará e faça parte da academia de 
                       futebol profissional Blockchain Sports
@@ -63,8 +69,9 @@
                 </div>
             </div>
             <div class="sectiion-hero__col-last row">
-              <div class="col-4 p-0">
+              <div class="col p-0">
                 <div class="border-box-container">
+                    <img class="hero-card__blur_first hero-card__blur" src="./img/card-bg-blur.svg">
                     <div class="border-box">  
                         <div>
                             <img src="./img/eye.svg"/>
@@ -73,23 +80,25 @@
                     </div>
                 </div>
               </div>
-              <div class="col-4 ps-5 p-0">
+              <div class="col spacing p-0">
                 <div class="border-box-container">
+                    <img class="hero-card__blur_second hero-card__blur" src="./img/card-bg-blur.svg">
                     <div class="border-box">  
                         <div>
                             <img src="./img/pay.svg"/>
                         </div>
-                        <p class="hero-card__text ">Seja pago e concentre-se no jogo que você ama</p>
+                        <p class="hero-card__text_second hero-card__text ">Seja pago e concentre-se no jogo que você ama</p>
                     </div>
                 </div>
               </div>
-              <div class="col-4 ps-5 p-0">
+              <div class="col spacing p-0">
                 <div class="border-box-container">
+                    <img class="hero-card__blur_last hero-card__blur" src="./img/card-bg-blur.svg">
                     <div class="border-box">  
                         <div>
                             <img src="./img/edit.svg"/>
                         </div>
-                        <p class="hero-card__text ">Assine seu primeiro contrato profissional</p>
+                        <p class="hero-card__text_last hero-card__text">Assine seu primeiro contrato profissional</p>
                     </div>
                 </div>
               </div>
@@ -104,34 +113,46 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center">Tempo de futebol</h2>
+                    <h2 class="section_title text-center">Tempo de futebol</h2>
                 </div>
-                <div class="col-12">
-                    <p class="text-center">
+                <div class="d-flex justify-content-center col-12">
+                    <p class="sectiion_subtitle text-center">
                         Uma grande série de torneios e eventos no estado do Ceará. Estamos à procura de candidatos para ingressar na Academia BlockchainSports
                     </p>
             </div>
             <div class="sectiion-second_row-last row">
-                <div class="col">
+                <div class="sectiion-second_col_man col">
                    <img src="./img/man.png">
                 </div>
-                <div class="col">
+                <div class="sectiion-second_col_info col">
                       <div class="border-box-container">
+                        <img class="sectiion-second_row-last_card-blur_first sectiion-second_row-last_card-blur" src="./img/card-bg-blur.svg">
                           <div class="border-box">  
-                              <img src="./img/eye.svg"/>
-                              <p class="hero-card__text ">Desenvolva seus talentos sob a supervisão de treinadores profissionais</p>
+                            <div class="image-wrapper">
+                                <img src="./img/ellipse.svg"/>
+                                <img class="image-abs" src="./img/cup.svg"/>
+                            </div>
+                              <p class="hero-card__text_first hero-card__text">Mais de <span class="list-col__text_green">50 torneios</span> <br> em todo o estado do Ceará</p>
                           </div>
                       </div>
                       <div class="border-box-container">
+                        <img class="sectiion-second_row-last_card-blur_second sectiion-second_row-last_card-blur" src="./img/card-bg-blur.svg">
                             <div class="border-box">
-                                <img src="./img/pay.svg"/>
-                                <p class="hero-card__text">Seja pago e concentre-se no jogo que você ama</p>
+                                <div class="image-wrapper">
+                                    <img src="./img/ellipse.svg"/>
+                                    <img class="image-abs" src="./img/star.svg"/>
+                                </div>
+                                <p class="hero-card__text">Presença de <br> <span class="list-col__text_green">olheiros</span> europeus</p>
                             </div>
                         </div>
                         <div class="border-box-container">   
+                            <img class="sectiion-second_row-last_card-blur_last sectiion-second_row-last_card-blur" src="./img/card-bg-blur.svg">
                             <div class="border-box">
-                                <img src="./img/edit.svg"/>
-                                <p class="hero-card__text">Assine seu primeiro contrato profissional</p>
+                                <div class="image-wrapper">
+                                    <img src="./img/ellipse.svg"/>
+                                    <img class="image-abs" src="./img/user.svg"/>
+                                </div>
+                                <p class="hero-card__text"><span class="list-col__text_green">Dezenas</span> de milhares <br> de participantes</p>
                             </div>
                         </div>
                       </div>  
@@ -147,28 +168,63 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center">Seu caminho para o sonho</h2>
+                    <h2 class="section_title text-center">Seu caminho para o sonho</h2>
                 </div>
             </div>
             <div class="card-row row">
                 <div class="col">
-                    <div class="border-box-container">
-                        <div class="border-box">  
-                            <img src="./img/eye.svg"/>
-                            <p class="hero-card__text ">Desenvolva seus talentos sob a supervisão de treinadores profissionais</p>
+                    <div class="border-box-container">   
+                        <img class="sectiion-second_row-last_card-blur_last sectiion-second_row-last_card-blur" src="./img/card-bg-blur.svg">
+                        <div class="border-box">
+                            <div class="image-wrapper">
+                                <img src="./img/ellipse.svg"/>
+                                <img class="image-abs" src="./img/gift.svg"/>
+                            </div>
+                            <img class="stage" src="./img/1.svg">
+                            <h3 class="sectiion-third_title">
+                                Participe <br> do torneio
+                            </h3>
+                            <p class="sectiion-third_text hero-card__text hero-card__text">
+                                Mostre suas habilidades no futebol aos olheiros <br> da academia competindo com outros participantes
+                            </p>
                         </div>
                     </div>
                     <div class="border-box-container">
-                          <div class="border-box">
-                              <img src="./img/pay.svg"/>
-                              <p class="hero-card__text">Seja pago e concentre-se no jogo que você ama</p>
-                          </div>
+                        <img class="sectiion-second_row-last_card-blur_last sectiion-second_row-last_card-blur" src="./img/card-bg-blur.svg">
+                        <div class="border-box">
+                            <div class="image-wrapper">
+                                <img src="./img/ellipse.svg"/>
+                                <img class="image-abs" src="./img/gift.svg"/>
+                            </div>
+                            <img class="stage_second stage" src="./img/2.svg">
+                            <h3 class="sectiion-third_title">
+                                Assine contrato com <br> uma equipe profissional
+                            </h3>
+                            <p class="sectiion-third_text hero-card__text hero-card__text">
+                                Nossa academia é frequentada por olheiros de clubes de <br>futebol mundialmente famosos, o que oferece oportunidade <br>
+                                de assinar contrato com um time profissional e se tornar
+                                <br> jogador de futebol
+                            </p>
+                        </div>
                       </div>
                       <div class="border-box-container">   
-                          <div class="border-box">
-                              <img src="./img/edit.svg"/>
-                              <p class="hero-card__text">Assine seu primeiro contrato profissional</p>
-                          </div>
+                        <img class="sectiion-second_row-last_card-blur_last sectiion-second_row-last_card-blur" src="./img/card-bg-blur.svg">
+                        <div class="border-box">
+                            <div class="image-wrapper">
+                                <img src="./img/ellipse.svg"/>
+                                <img class="image-abs" src="./img/gift.svg"/>
+                            </div>
+                            <img class="stage_second stage" src="./img/3.svg">
+                            <h3 class="sectiion-third_title">
+                                Junte-se à Academia <br>Blockchain Sports (Ceará)
+                            </h3>
+                            <p class="sectiion-third_text hero-card__text hero-card__text">
+                                Desenvolva os seus talentos sob a orientação de treinadores 
+                                <br>experientes com aplicação das melhores metodologias do 
+                                <br>mundo, aproveite todas as condições: equipamento 
+                                <br>completo, campos, alojamento, alimentação e suporte
+                            </p>
+                        </div>
                       </div>
                     </div> 
             </div>
@@ -178,27 +234,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center">BlockchainSports Academy</h2>
+                    <h2 class="section_title text-center">BlockchainSports Academy</h2>
                 </div>
             </div>
             <div class="list-row row">
                 <div class="list-col_first list-col col-12">
-                    <span>(01)</span>
+                    <span class="sub">(01)</span>
                     <p class="list-col__text">O caminho rápido para futebol profissional</p>
                 </div>
                 <div class="list-col col-12">
-                    <span>(02)</span>
-                    <p class="list-col__text"> <span class="list-col__text_green">Modernos</span> complexos de treinamento</p>
+                    <span class="sub">(02)</span>
+                    <p class="list-col__text_decore list-col__text"> <span class="list-col__text_green">Modernos</span> complexos de treinamento</p>
                     <div class="image-absolute">
-                        <img src="./img/team_mimi.png">
+                        <img src="./img/team_mini.png">
                     </div>
                 </div>
                 <div class="list-col col-12">
-                    <span>(03)</span>
+                    <span class="sub">(03)</span>
                     <p class="list-col__text">Equipe profissional de treinadores</p>
                 </div>
                 <div class="list-col col-12">
-                    <span>(04)</span>
+                    <span class="sub">(04)</span>
                     <p class="list-col__text">Remuneração para alunos desde o primeiro mês</p>
                 </div>
             </div>
@@ -209,36 +265,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Mapa do Ceará</h2>
+                    <h2 class="section_title">Mapa do Ceará</h2>
                 </div>
             </div>
             <div class="sectiion-last-row-last row">
-                <div class="col">
-                   <img src="./img/land.png">
+                <div class="col-2">
+                    <h4 class="col-title">Horário: <br> <spna class="text-mark">8:00 AM</spna></h4>
                 </div>
-                <div class="text-col col">
-                    <p class="text-uppercase text-mark">
+                <div class="col-2">
+                    <h4 class="col-title">State: <br> <spna class="text-mark">Ceará</spna></h4>
+                </div>
+            </div>
+            <div class="sectiion-last-row-last row">
+                <div class="d-flex align-items-center
+                justify-content-center col-12 col-lg-6">
+                <img 
+                srcset="./img/land-w-220.png 220w, ./img/land.png 489w"
+                sizes="(max-width: 768px) 220px,
+                    489px"
+                src="./img/land.png"
+                alt=""
+            >
+                </div>
+                <div class="d-felx align-items-center
+                justify-content-center
+                    text-col col-12  col-lg-6">
+                    <p class="text text-uppercase text-mark">
                         26.11-Iguatu.Profa.MariaRosa Gouvêia, 200-352 - Sete de Setembro
                     </p>
-                    <p>
+                    <p class="text">
                         29.11 - Centro, Jucás - State of Ceará
                     </p>
-                    <p>
+                    <p class="text">
                         01.12 - Vila Confiança, 2, Várzea Alegre
                     </p>
-                    <p>
+                    <p class="text">
                         01.12 - Vila Confiança, 2, Várzea Alegre
                     </p>
-                    <p class="text-uppercase text-mark">
+                    <p class="text text-uppercase text-mark">
                         03.12 - Francisco Martins de Souza, 2583 - Jardim Gonzaga, Juazeiro do Norte
                     </p>
-                    <p>
+                    <p class="text">
                         05.12 - Morro Dourado, Brejo Santo - State of Ceará
                     </p>
-                    <p>
+                    <p class="text">
                         07.12 - Rua Josè Dodô - Dom Bosco, Mauriti - CE
                     </p>
-                    <p>
+                    <p class="text">
                         11.12 - 17.12 Fortaleza (U15, U17)
                     </p>
                 </div>
@@ -249,7 +322,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Submeta aplicação, venha para o torneio e torne-se 
+                    <h2 class="section_title">Submeta aplicação, venha para o torneio e torne-se 
                         um jogador de futebol profissional!</h2>
                 </div>
             </div>
@@ -262,20 +335,50 @@
                              <a class="form-btn btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><span class="btn-title">Enviar</span></a>
                         </div>
                         <div class="sectiion-last-1-card-col-image col">
-                            <img src="./img/man-2.png" alt="">
+                            <img 
+                            srcset="./img/blur-w-90.svg 269w, ./img/blur.svg 450w"
+                            sizes="(max-width: 1200px) 269px,
+                                450px"
+                            src="./img/blur.svg"
+                            alt=""
+                            class="sectiion-last-1-card-col-image__blur"
+                        >
+                            <img 
+                                srcset="./img/man-2-w-161.png 161w, ./img/man-2.png 292w"
+                                sizes="(max-width: 1200px) 161px,
+                                    292px"
+                                src="./img/man-2.png"
+                                alt=""
+                                class="sectiion-last-1-card-col-image__man" 
+                            >
                         </div>
                        </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="border-box-container">
+                    <div class="border-box-container_team border-box-container">
                         <div class="sectiion-last-1-row row">
                             <div class="sectiion-last-1-col col">
-                                <h4 class="sectiion-last-1-col__titile">Vou vir com a equipe</h4>
+                                <h4 class="sectiion-last-1-col__titile_right sectiion-last-1-col__titile">Vou vir com a equipe</h4>
                                 <a class="form-btn btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button"><span class="btn-title">Enviar</span></a>
                             </div>
                             <div class="sectiion-last-1-card-col-image col">
-                                <img src="./img/team-2.png" alt="">
+                                <img 
+                                    srcset="./img/blur-w-90.svg 269w, ./img/blur.svg 450w"
+                                    sizes="(max-width: 1200px) 269px,
+                                        450px"
+                                    src="./img/blur.svg"
+                                    alt=""
+                                    class="sectiion-last-1-card-col-image__blur"
+                                >
+                                <img 
+                                srcset="./img/team-2-w-267.png 271w, ./img/team-2.png 385w"
+                                sizes="(max-width: 1200px) 271px,
+                                    385px"
+                                src="./img/team-2.png"
+                                alt=""
+                                class="sectiion-last-1-card-col-image__team"
+                            >
                             </div>
                            </div>
                     </div>
@@ -285,7 +388,58 @@
     </section>
 
     <footer class="footer">
-
+        <div class="container">
+        <div class="footer-row">
+            <div class="col-left d-flex col-10">
+                <div class="d-flex justify-content-start">
+                    <nav class="navbar__footer navbar navbar-expand-lg navbar-dark">
+                        
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ms-auto">
+                              <li class="nav-item">
+                                <a class="navbar__header-link nav-link mx-2" aria-current="page" href="#">Sobre o torneio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="navbar__header-link nav-link mx-2" href="#">Caminho para o sonho</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="navbar__header-link nav-link mx-2" href="#">Sobre a Academia</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="navbar__header-link nav-link mx-2" href="#">Mapa dos torneios</a>
+                              </li>
+                            </ul>
+                          </div>
+                       
+                    </nav>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <img src="./img/logo-1.svg"/>
+                </div>
+                <div class="socials d-flex justify-content-center">
+                    <a>
+                        <img src="./img/instagram.svg">
+                    </a>
+                    <a>
+                        <img src="./img/facebook.svg">
+                    </a>
+                    <a>
+                        <img src="./img/youtube.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center flex-column">
+                    <p>
+                        2023г.
+                    </p>
+                    <p>
+                        © All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
     </footer>
 
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
