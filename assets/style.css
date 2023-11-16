@@ -452,7 +452,6 @@ button:focus {
     font-size: 18px;
     padding-bottom: 24px;
     line-height: 100%;
-    text-align: center;
 }
 .col-title{
     font-size: 18px;
@@ -725,6 +724,11 @@ top: 15px
     left: 10px; 
 }
 
+.sectiion-last-row-last_title{
+    font-size: 18px;
+    color: rgba(214, 214, 219, 1);
+}
+
 .prompt-error{
     display: none;
     color: crimson
@@ -884,6 +888,10 @@ top: 15px
     }
     .list-col_second:hover .trainer{
         top: 10px;
+    }
+    .sectiion-last-row-last_title{
+        font-size: 28px;
+    margin-bottom: 20px;
     }
 }
 @media (min-width: 768px) {
@@ -1203,6 +1211,13 @@ top: 15px
     }
     .list-col_second:hover .trainer{
         right: 15px;
+    }
+    .sectiion-last-row-last_title{
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+    .sectiion-last-row-last_event_first{
+        margin-top: 95px !important;
     }
 }
 
