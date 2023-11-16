@@ -173,12 +173,15 @@ button:focus {
     top: 500px;
 }
 .sectiion-second_row-last_card-blur_first{
+    display: none;
     top: -40px;
 }
 .sectiion-second_row-last_card-blur_second{
+    display: none;
     top: -40px;
 }
 .sectiion-second_row-last_card-blur_last{
+    display: none;
     top: -40px;
 }
 .border-box {
@@ -207,12 +210,12 @@ button:focus {
     background-size: 100% 100%;
     position: relative;
 }
-.sectiion-t
 .sectiion-second .border-box-container {
     height: 150px;
     width: 220px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .sectiion-second .border-box-container .border-box {
     display: flex;
@@ -482,11 +485,11 @@ button:focus {
     gap: 20px;
     align-items: center;
     margin-top: 24px !important;
-    overflow-x: auto;
-    overflow-y: hidden;
 }
 .sectiion-second_col_info .hero-card__text{
     line-height: 14px;
+    position: relative;
+    bottom: 10px;
 }
 .sectiion-third_text {
     font-size: 12px;
@@ -621,6 +624,17 @@ top: 15px
     color: rgba(255, 255, 255, 0.8);
 }
 
+.slider{
+    /*width: 100px;*/
+    position: relative;
+    /*top: 70px;*/
+    overflow: hidden !important;
+    /*height: 600px !important;*/
+    justify-content: center;
+    left: 10px;
+  
+}
+
 @font-face {
     font-family: "SuisseIntlLight"; 
     src: url("../fonts/SuisseIntl-Light.otf") format("truetype"); 
@@ -708,6 +722,7 @@ top: 15px
     .sectiion-second .border-box-container{
         width: 545px;
         height: 288px;
+        margin-bottom: 20px;
     }
     .sectiion-second .border-box-container .border-box{
         width: 500px;
@@ -765,6 +780,12 @@ top: 15px
     .list-col{
         padding-top: 24.5px !important;
         padding-bottom: 24.5px !important;
+    }
+    .sectiion-second_col_info .hero-card__text{
+        bottom: 0px;
+    }
+    .slider{
+        left: 0px;
     }
 }
 @media (min-width: 768px) {
@@ -835,7 +856,7 @@ top: 15px
         margin-top: 50px !important;
     }
     .sectiion-second_row-last{
-        margin-top: 90px !important;
+        margin-top: 50px !important;
     }
     .sectiion-second_col_info .hero-card__text{
         font-size: 32px;
@@ -1063,8 +1084,7 @@ top: 15px
         width: 798px
     }
     .sectiion-second_col_info{
-        flex-direction: column;
-        overflow:initial;
+        /*flex-direction: column;*/
     }
     .footer-row{
         flex-direction: row;
