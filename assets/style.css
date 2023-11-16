@@ -612,6 +612,14 @@ top: 15px
     font-family: 'Montserrat', sans-serif;
     line-height: 19,5px;
 }
+.wrapper-input{
+    position: relative;
+}
+.icon-warning{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
 .form-control{
     background-color: rgba(250, 250, 250, 1) !important;
     border: none !important;

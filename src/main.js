@@ -1,21 +1,23 @@
-let payload_1
-let payload_2
-let nome_1
-let nome_2
-let phone
-let phone_2
-let date
-let date_2
-let amountPeopleTeam
-let teamName
-let messanger
-let messanger_2
+let payload_1 = ''
+let payload_2 = ''
+let nome_1 = ''
+let nome_2 = ''
+let phone = ''
+let phone_2 = ''
+let date = ''
+let date_2 = ''
+let amountPeopleTeam = ''
+let teamName = ''
+let city = ''
+let city_2 = ''
+let messanger = ''
+let messanger_2 = ''
 
 const inputNomeComplete = document.getElementById('inputNomeComplete')
 const inputPhone = document.getElementById('inputPhone')
 const inputDate = document.getElementById('inputDate')
+const inputCity = document.getElementById('inputCity')
 const inputMessanger = document.getElementById('inputMessanger')
-
 
 inputNomeComplete.addEventListener('input', (e) => {
     nome_1 = e.target.value
@@ -27,6 +29,10 @@ inputPhone.addEventListener('input', (e) => {
 
 inputDate.addEventListener('input', (e) => {
     date = e.target.value
+})
+
+inputCity.addEventListener('input', (e) => {
+    city = e.target.value
 })
 
 inputMessanger.addEventListener('input', (e) => {
@@ -43,6 +49,8 @@ form_1.addEventListener('submit', () => {
         phone + 
         ", Ano de nascimento: " + 
         date + 
+        ", Cidade: " + 
+        city + 
         ", Mensageiro de contato: " + 
         messanger
     sendFormTg(payload_1)
@@ -54,6 +62,7 @@ const inputPhone_2 = document.getElementById('inputPhone_2')
 const inputDate_2 = document.getElementById('inputDate_2')
 const inputAmountPeopleTeam = document.getElementById('inputAmountPeopleTeam')
 const inputTeamName = document.getElementById('inputTeamName')
+const inputCity_2 = document.getElementById('inputCity_2')
 const inputMessanger_2 = document.getElementById('inputMessanger_2')
 
 inputNomeComplete_2.addEventListener('input', (e) => {
@@ -71,6 +80,10 @@ inputAmountPeopleTeam.addEventListener('input', (e) => {
 
 inputTeamName.addEventListener('input', (e) => {
     teamName = e.target.value
+})
+
+inputCity_2.addEventListener('input', (e) => {
+    city_2 = e.target.value
 })
 
 inputMessanger_2.addEventListener('input', (e) => {
@@ -92,6 +105,8 @@ form_2.addEventListener('submit', () => {
     amountPeopleTeam + 
     ", Nome de equipe: " +
     teamName +
+    ", Cidade: " + 
+    city_2 + 
     ", Mensageiro de contato: " + 
     messanger_2
     sendFormTg(payload_2)
