@@ -504,13 +504,14 @@ button:focus {
 .sectiion-last-1-card-col-image__team{
     position: relative;
     z-index: 5;
-    top: 100px;
+    top: 115px;
 }
 .sectiion-last-1-card-col-image__man {
     left: 110px;
 }
 .sectiion-last-1-card-col-image__team{
     left: 30px;
+    top: 155px
 }
 .sectiion-last-1-card-row .border-box-container{
     background: url('../img/grass.png') no-repeat;
@@ -783,14 +784,14 @@ top: 15px
     }
     .sectiion-last-1-card-col-image__man {
         left: 180px;
-        top: 100px;
+        top: 115px;
     }
     .sectiion-last-1-card-col-image__blur{
         left: 130px;
         top: 120px;
     }
     .sectiion-last-1-card-col-image__team{
-        top: 100px;
+        top: 155px;
         left: 100px;
     }
     .sectiion-third_text{
@@ -955,7 +956,7 @@ top: 15px
     }
     .sectiion-last-1-card-col-image__man {
         left: 261px;
-        top: 90px;
+        top: 105px;
     }
       .sectiion-last-1-card-col-image__blur{
         left: 216px;
@@ -963,7 +964,7 @@ top: 15px
     }
     .sectiion-last-1-card-col-image__team{
         left: 180px;
-        top: 90px;
+        top: 145px;
     }
     .sectiion-third_text{
         width: 580px;
@@ -1018,6 +1019,9 @@ top: 15px
     .sectiion-last-1-card-col-image__team{
         top: 0px;
         left: 0px;
+    }
+    .sectiion-last-1-card-col-image__man{
+        top: 8px;
     }
     .sectiion-last-1-col{
         align-items: initial !important;
