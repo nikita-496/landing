@@ -331,6 +331,8 @@ button:focus {
 }
 .list-col_second:hover .trainer{
     display: block;
+    position: relative;
+    top: 5px;
 }
 .list-col_third:hover .money{
     display: block;
@@ -880,6 +882,9 @@ top: 15px
     .slider{
         left: 0px;
     }
+    .list-col_second:hover .trainer{
+        top: 10px;
+    }
 }
 @media (min-width: 768px) {
     .hero__title{
@@ -1195,6 +1200,9 @@ top: 15px
     }
     .socials{
         gap: 35px;
+    }
+    .list-col_second:hover .trainer{
+        right: 15px;
     }
 }
 
