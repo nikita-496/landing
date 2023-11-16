@@ -115,8 +115,8 @@ form_2.addEventListener('submit', () => {
 
 async function sendFormTg(payload) {
     event.preventDefault();
-    const token = "YOUR_BOT_TOKEN"
-    const chat_id = ''
+    const token = "6628761032:AAHF88h4rp7Sr-omd5vHm2p68azfrOt6vcI"
+    const chat_id = '-1002135830957'
     try {
       const response = await fetch(
         `https://api.telegram.org/bot${token}/sendMessage`,
