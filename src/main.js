@@ -13,6 +13,7 @@ let city_2 = ''
 let messanger = ''
 let messanger_2 = ''
 
+
 const promptError = document.getElementById('promptError')
 const promptError_2 = document.getElementById('promptError_2')
 
@@ -98,7 +99,6 @@ inputMessanger_2.addEventListener('input', (e) => {
 
 
 const form_2 = document.getElementById('form-2')
-
 form_2.addEventListener('submit', () => {
     payload_2 =    
     "Nome Completo do capitao: " +
@@ -123,6 +123,10 @@ async function sendFormTg(payload, required , typeForm) {
     event.preventDefault();
     const token = "6628761032:AAHF88h4rp7Sr-omd5vHm2p68azfrOt6vcI"
     const chat_id = '-1002135830957'
+
+
+    $('#exampleModalToggle').modal('hide');
+    $('#exampleModalToggle2').modal('hide');
 
     if(typeForm === 1 && (required.nome_1 === '' || required.phone === '' 
         || required.date === '' || required.city === '')) {
@@ -152,8 +156,16 @@ async function sendFormTg(payload, required , typeForm) {
           body: JSON.stringify({ chat_id, text: payload }),
         }
       );
-      promptError_2.style.display = 'none'
-      promptError.style.display = 'none'
+
+    
+      const success = new bootstrap.Modal(document.getElementById('success'))
+      success.show()
+      const successButton = document.getElementById('success__button')
+  
+      successButton.addEventListener('click', (e) => {
+        success.hide()  
+    })
+  
       console.log('response', response)
     } catch (err) {
       console.log(`Error: ${err}`);

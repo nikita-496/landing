@@ -743,6 +743,41 @@ top: 15px
 .modal-header{
     padding-bottom: 0px !important;
 }
+
+.success-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: rgba(33, 33, 35, 1);
+    line-height: 21.94px;
+    font-size: 24px;
+  
+}
+.success-subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: rgba(33, 33, 35, 0.9);
+    line-height: 21.94px;
+    font-size: 18px;
+}
+
+.modal-body__success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+    padding: 20px 20px 50px 20px !important;
+}
+
+.success__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.success__image{
+    position: relative;
+    top: 30px
+}
 @font-face {
     font-family: "SuisseIntlLight"; 
     src: url("../fonts/SuisseIntl-Light.otf") format("truetype"); 
@@ -1281,6 +1316,9 @@ top: 15px
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 100% 100%;
+    }
+    .form-btn__modal_success{
+        width: 420px !important;
     }
 }
 
