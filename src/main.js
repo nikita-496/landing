@@ -13,6 +13,9 @@ let city_2 = ''
 let messanger = ''
 let messanger_2 = ''
 
+const promptError = document.getElementById('promptError')
+const promptError_2 = document.getElementById('promptError_2')
+
 const inputNomeComplete = document.getElementById('inputNomeComplete')
 const inputPhone = document.getElementById('inputPhone')
 const inputDate = document.getElementById('inputDate')
@@ -53,7 +56,7 @@ form_1.addEventListener('submit', () => {
         city + 
         ", Mensageiro de contato: " + 
         messanger
-    sendFormTg(payload_1)
+    sendFormTg(payload_1, {nome_1, phone, date, city}, 1)
 })
 
 
@@ -73,6 +76,9 @@ inputPhone_2.addEventListener('input', (e) => {
     phone_2 = e.target.value
 })
 
+inputDate_2.addEventListener('input', (e) => {
+    date_2 = e.target.value
+})
 
 inputAmountPeopleTeam.addEventListener('input', (e) => {
     amountPeopleTeam = e.target.value
@@ -109,14 +115,31 @@ form_2.addEventListener('submit', () => {
     city_2 + 
     ", Mensageiro de contato: " + 
     messanger_2
-    sendFormTg(payload_2)
+    sendFormTg(payload_2, {nome_2, phone_2, date_2, amountPeopleTeam, teamName, city_2} , 2)
 })
 
 
-async function sendFormTg(payload) {
+async function sendFormTg(payload, required , typeForm) {
     event.preventDefault();
     const token = "6628761032:AAHF88h4rp7Sr-omd5vHm2p68azfrOt6vcI"
     const chat_id = '-1002135830957'
+
+    if(typeForm === 1 && (required.nome_1 === '' || required.phone === '' 
+        || required.date === '' || required.city === '')) {
+        promptError_2.style.display = 'none'
+        promptError.style.display = 'block'
+        return
+    }
+    else if(typeForm === 2 && (required.nome_2 === '' || required.phone_2 === ''
+                || required.date_2 === '' || required.city_2 === ''
+                || required.amountPeopleTeam === '' || required.teamName === '')
+         ) {
+        promptError.style.display = 'none'
+        promptError_2.style.display = 'block'
+        return
+    }
+    promptError.style.display = 'none'
+    promptError_2.style.display = 'none'
     try {
       const response = await fetch(
         `https://api.telegram.org/bot${token}/sendMessage`,
@@ -129,6 +152,8 @@ async function sendFormTg(payload) {
           body: JSON.stringify({ chat_id, text: payload }),
         }
       );
+      promptError_2.style.display = 'none'
+      promptError.style.display = 'none'
       console.log('response', response)
     } catch (err) {
       console.log(`Error: ${err}`);

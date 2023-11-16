@@ -720,8 +720,12 @@ top: 15px
     overflow: hidden !important;
     /*height: 600px !important;*/
     justify-content: center;
-    left: 10px;
-  
+    left: 10px; 
+}
+
+.prompt-error{
+    display: none;
+    color: crimson
 }
 
 @font-face {
