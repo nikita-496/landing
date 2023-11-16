@@ -313,6 +313,88 @@ button:focus {
 .list-col_first{
     border-top: 1px solid rgba(255, 255, 255, .3);
 }
+.list-col_first:hover .list-col__text_green{
+    color: rgba(37, 202, 113, 1)
+}
+.list-col_second:hover .list-col__text_green{
+    color: rgba(37, 202, 113, 1)
+}
+.list-col_third:hover .list-col__text_green{
+    color: rgba(37, 202, 113, 1)
+}
+.list-col_last:hover .list-col__text_green{
+    color: rgba(37, 202, 113, 1)
+}
+
+.list-col_first:hover .team_mini {
+    display: block;
+}
+.list-col_second:hover .trainer{
+    display: block;
+}
+.list-col_third:hover .money{
+    display: block;
+}
+.list-col_last:hover .group-team{
+    display: block;
+}
+
+/*.list-col_first:hover .list-col__text_first::after{
+    content: "";
+    width: 23px;
+    height: 23px;
+    display: block;
+    border-radius: 50px;
+    border: 1px solid #25CA71;
+    position: absolute;
+    right: 140px;
+    top:10px;
+}
+.list-col_second:hover .list-col__text_second::after{
+    content: "";
+    width: 23px;
+    height: 23px;
+    display: block;
+    border-radius: 50px;
+    border: 1px solid #25CA71;
+    position: absolute;
+    right: 140px;
+    top:10px;
+}
+.list-col_third:hover .list-col__text_third::after{
+    content: "";
+    width: 23px;
+    height: 23px;
+    display: block;
+    border-radius: 50px;
+    border: 1px solid #25CA71;
+    position: absolute;
+    right: 140px;
+    top:10px;
+}
+.list-col_last:hover .list-col__text_last::after{
+    content: "";
+    width: 23px;
+    height: 23px;
+    display: block;
+    border-radius: 50px;
+    border: 1px solid #25CA71;
+    position: absolute;
+    right: 140px;
+    top:10px;
+}*/
+.team_mini{
+    display: none;
+}
+.trainer{
+    display: none;
+}
+.money{
+    display: none;
+}
+.group-team{
+    display: none;
+}
 .list-col {
     display: flex;
     flex-direction: column;
@@ -337,9 +419,7 @@ button:focus {
     position: relative;
    /* width: 627px;*/
 }
-.list-col__text_green{
-    color: rgba(37, 202, 113, 1)
-}
+
 .sub{
     display: none;
     font-size: 21px;
@@ -991,17 +1071,7 @@ top: 15px
     .list-col {
         flex-direction: column;
     }
-    .list-col__text_decore::after{
-        content: "";
-        width: 23px;
-        height: 23px;
-        display: block;
-        border-radius: 50px;
-        border: 1px solid #25CA71;
-        position: absolute;
-        right: 140px;
-        top:10px;
-    } 
+
     .list-col__text, .list-col__text_third, .list-col__text_last {
         font-size: 24px;
         width: 600px;
