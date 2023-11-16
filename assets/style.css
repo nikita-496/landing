@@ -737,6 +737,12 @@ top: 15px
     color: crimson
 }
 
+.modal-body{
+    padding: 50px !important;
+}
+.modal-header{
+    padding-bottom: 0px !important;
+}
 @font-face {
     font-family: "SuisseIntlLight"; 
     src: url("../fonts/SuisseIntl-Light.otf") format("truetype"); 
